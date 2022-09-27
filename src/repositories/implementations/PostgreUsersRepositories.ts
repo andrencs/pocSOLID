@@ -15,4 +15,11 @@ export class PostgreUsersRepository implements IUsersRepository {
     this.users.push(user);
   }
 
+  async getAllUsers(): Promise<User[]> {
+    return this.users.map(user => {
+      delete user.password
+      return user
+    })
+  }
+
 }

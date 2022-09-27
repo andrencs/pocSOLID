@@ -21,7 +21,7 @@ export class MailtrapMailProvider implements IMailProvider{
       if (error) {
         console.log(error);
       } else {
-        console.log("Server is ready to take our messages");
+        console.log("Mailtrap is ready to take our messages");
       }
     });
   }
